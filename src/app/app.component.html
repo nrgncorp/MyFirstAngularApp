@@ -1,6 +1,15 @@
-<h1>App Component, {{helloWorld}}!</h1>
-
-<button (click)="clickMe()">Beni Tıkla</button>
-<p [class]="pClassName">Lorem ipsum dolor sit amet.</p>
-<input type="text" (keyup)="changeHelloWorldVariable($event)">
-<p class="text-danger">kırmızı yazaı</p>
+<div class="d-flex justify-content-center align-items-center w-100 main-area">
+    <div class="proccess-area p-4">
+        <h1 class="w-100 text-cemter mt-4">Hoş geldin<span>{{helloWorld}}!</span>
+        </h1>
+        <br>
+        <!-- <p [class]="pClassName">Lorem ipsum dolor sit amet.</p> -->
+        <div class="d-flex justify-content-center">
+            <input class="p-3" type="text" placeholder="Ajan İsmi Giriniz!" (keyup)="changeHelloWorldVariable($event)">
+        </div>
+        <!-- <p class="text-danger">kırmızı yazaı</p> -->
+        <div class="d-flex justify-content-center mt-5">
+            <button (click)="clickMe()" class="btn-dark p-2">Giriş Yap</button>
+        </div>
+    </div>
+</div>

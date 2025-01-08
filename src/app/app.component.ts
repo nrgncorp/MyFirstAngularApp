@@ -12,11 +12,11 @@ import { ContactComponent } from './contact/contact.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  helloWorld: string = "hello worl form paris";
+  helloWorld: string = "Anonymus";
   pClassName = "text-danger";
 
   clickMe(){
-    alert("beni tikladın!");
+    alert("Geçersiz Ajan Kaydı!");
   }
 
   changeHelloWorldVariable(event:any){
